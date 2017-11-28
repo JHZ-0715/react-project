@@ -1,0 +1,110 @@
+
+.header img{
+	width: 100%;
+	height: 240px;
+}
+
+.banner{
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.banner dl{
+	flex: 1;
+	height: 75px;
+	text-align: center;
+}
+.banner dl dt {
+	width: 100%;
+	height: 80%;
+}
+.banner dl .b1{
+	background: url(../images/b1.png) no-repeat center;
+}
+.banner dl .b2{
+	background: url(../images/b2.png) no-repeat center;
+}
+.banner dl .b3{
+	background: url(../images/b3.png) no-repeat center;
+}
+.banner dl .b4{
+	background: url(../images/b4.png) no-repeat center;
+}
+.banner dl .b5{
+	background: url(../images/b5.png) no-repeat center;
+}
+.banner dl dd{
+	height: 20%;
+	font-size: 14px;
+	line-height: 20px;
+}
+.main{
+	margin-top: 10px;
+}
+.main p{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}.main2{
+	width: 1200px;
+	height: 200px;
+	display: flex;
+	overflow: auto;
+	margin-top: 10px;
+}
+.main2 dl{
+	flex: 1;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.main2 dt{
+	width: 100%;
+	height: 70%;
+}
+.main2 dt img{
+	width: 100%;
+	height: 135px;
+	border-radius: 10px;
+}
+.main2 .dd1{
+	height: 20%;
+	width: 100%; 
+/*	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+}
+.main2 .dd2{
+	height: 10%;
+	width: 100%; 
+/*	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+	display: flex;
+}
+.footer li{
+	flex: 1;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+}
