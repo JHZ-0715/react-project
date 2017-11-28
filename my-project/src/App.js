@@ -7,26 +7,29 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      films: []
+      shows: []
     }
   }
+
+    
+
   componentDidMount(){
     var that = this;
-    axios.get("/v4/api/film/now-playing?__t=1511310189846&page=1&count=5")
+    axios.get("/prodapi/pub/site/1002/banner/app?bannerCategory=&time=1511835238807")
     .then(function(res){
       console.log(res);
       that.setState({
-        films:res.data.data.films
+        shows:res.data.result.data
       })
     })
   }
   render(){
-    var list = this.state.films.map((item,index)=>{
+    var list = this.state.shows.map((item,index)=>{
 
     return(
-      <div>
-        <img src = {item.cover.origin} />
-        <h2>{item.name}</h2>
+      <div key={index}>
+        <img src = {item.posterUrl} />
+ 
       </div>
       );
     })
