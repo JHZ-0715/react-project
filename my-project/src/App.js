@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './css/antd.css';
 import axios from 'axios'
+import { Carousel } from 'antd';
 
 class App extends Component {
   constructor(){
@@ -27,15 +29,20 @@ class App extends Component {
     var list = this.state.shows.map((item,index)=>{
 
     return(
+       
       <div key={index}>
-        <img src = {item.posterUrl} />
- 
+         <img src = {item.posterUrl} />
       </div>
+     
       );
     })
+
+
     return(
       <div>
+      <Carousel autoplay>
         {list}
+      </Carousel>
       </div>
       )
   }
