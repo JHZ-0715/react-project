@@ -26,16 +26,16 @@ class Mainlist extends Component {
 
     return(
        <div key={index}>
-         <div>
+         <div className="m1">
            <img src={item.posterURL} />
          </div>
-         <div>
-           <h2>qweqqweqwewe</h2>
-           <p>qweqqwee</p>
-           <p>qweqqwe</p>
-           <div>
-             <p>qwe</p>
-             <p>qweqwe</p>
+         <div className="m2">
+           <h2 className="m21">qweqqweqwewe</h2>
+           <p className="m22">qweqqwee</p>
+           <p className="m23">qweqqwe</p>
+           <div className="m24">
+             <p className="mp1">qwe</p>
+             <p className="mp2">qweqwe</p>
            </div>
          </div>
        </div>
