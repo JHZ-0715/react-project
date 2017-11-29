@@ -45,11 +45,12 @@ class Main extends Component {
 
 
     return(
-            
+          <div className="main222">
           <div className="main2">
-            
+      
               {list}
-            
+        
+          </div>
           </div>
       )
 
