@@ -4,6 +4,7 @@ import Login from './components/login'
 import Main from './components/Main';
 import Home from './components/Home';
 import Show from './components/Show';
+import Regist from './components/regist';
 import './App.css';
 import './css/antd.css';
 import './css/app.css';
@@ -46,6 +47,7 @@ class App extends Component {
                 <Route path="/home" component={Home}/>
                 <Route path="/Login" component={Login}/>
                 <Route path="/Show" component={Show}/>
+                <Route path="/Regist" component={Regist}/>
                 
               </Switch>
             </div>
