@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/antd.css';
 import Main from '../components/Main';
+import Mainlist from '../components/Mainlist';
 import axios from 'axios'
 import { Carousel } from 'antd';
 import {
@@ -79,6 +80,7 @@ class Home extends Component {
           </div>
          
           <Main></Main>
+          <Mainlist></Mainlist>
 
 
             </div>
