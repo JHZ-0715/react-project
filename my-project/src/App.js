@@ -41,7 +41,6 @@ class App extends Component {
                 <li><NavLink activeClassName="active" to="/login">我的</NavLink></li>
               </ul>
 
-              <hr/>
               <Switch>
                 <Redirect exact from="/" to="/home" />
                 <Route path="/home" component={Home}/>

@@ -25,7 +25,13 @@
         "^/prodapi": "/prodapi"
       },
       "ws": true
-    }
-    
+    },
+    "/users": {
+      "target": "http://localhost:8000",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/users": "/users"
+      },
+      "ws": true
   }
 }
