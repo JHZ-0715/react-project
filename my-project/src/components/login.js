@@ -6,10 +6,8 @@ class Login extends Component {
 	constructor() {
     super();
     this.login = this.login.bind(this);
-  }
+    }
     login() {
-        // console.log(document.querySelector('#username').value);
-        // console.log(document.querySelector('#psw').value);
        axios.post('/users/login', {
                 username: document.querySelector('#username').value,
                 psw: document.querySelector('#psw').value
@@ -23,13 +21,12 @@ class Login extends Component {
                     //history.push('/my/myhome')//登录成功刷新界面
                     alert('登录成功');
                 })
-        }
+            }
 
   render() {
     return (
     <div className="box">
-    	<a></a>
-    	<p>登录</p>
+    	    	<p><a></a>登录</p>
     	<div className="logo">
     		<img src={require("../images/login-logo.0cd98347.png")}/>
     	</div>
