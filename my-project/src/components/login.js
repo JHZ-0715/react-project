@@ -2,21 +2,21 @@ import React, {Component} from 'react';
 import '../css/login.css';
 import axios from 'axios';
 
-
-
 class Login extends Component {
 	constructor() {
     super();
     this.login = this.login.bind(this);
   }
     login() {
+        // console.log(document.querySelector('#username').value);
+        // console.log(document.querySelector('#psw').value);
        axios.post('/users/login', {
                 username: document.querySelector('#username').value,
-                password: document.querySelector('#psw').value
+                psw: document.querySelector('#psw').value
             })
                 .then((res) => {
-                    if (res.code !== 1) {
-                        alert(res.message);
+                    if (res.data.code !== 1) {
+                        alert(res.data.message);
                         return;
                     }
                     document.cookie = 'user=' + document.querySelector('#username').value + ';path=/';
@@ -34,7 +34,7 @@ class Login extends Component {
     		<img src={require("../images/login-logo.0cd98347.png")}/>
     	</div>
     	<div className="ipt1">
-    		<input type="text" id='username' placeholder="请输入用户名" autocomplete="off" />
+    		<input type="text" id='username' placeholder="请输入用户名" autoComplete="off" />
     	</div>
     	<div className="ipt2">
     		<input type="password" id='psw' placeholder="请输入密码" />
