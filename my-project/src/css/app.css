@@ -1,4 +1,3 @@
-
 .header img{
 	width: 100%;
 	height: 240px;
@@ -80,16 +79,63 @@
 	width: 100%; 
 }
 
+.main33{
+	width: 100%;
+	height: 180px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+}
+.main33 .m1{
+	flex: 1;
+}
+.main33 .m1 img{
+	margin-left: 20%;
+	width: 60%;
+	height: 160px;
+}
+.main33 .m2{
+	flex: 1;
+}
+.main33 .m2 .m21{
+	text-align: left;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.main33 .m2 .m22,.main33 .m2 .m23{
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.main33 .m2 .m24{
+	margin-top: 20px;
+}
+.main33 .m2 .m24 .mp1{
+	width: 50%;
+	float: left;
+	/*background: #f00;*/
 
+}
+.main33 .m2 .m24 .mp1 span{
+	display: inline-block;
+	color: #f00;
+	border: 2px solid #f00;
+	border-radius: 20%;
+	width: 55px;
+	height: 24px;
+	line-height: 20px;
+	text-align: center;
 
-
-
-
-
-
-
-
-
+}
+.main33 .m2 .m24 .mp2{
+	width: 50%;
+	float: right;
+	color: #000;
+}
+.main33 .m2 .m24 .mp2 span{
+	font-size: 18px;
+	color: #f00;
+}
 
 
 

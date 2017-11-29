@@ -25,17 +25,17 @@ class Mainlist extends Component {
     var list = this.state.showlist.map((item,index)=>{
 
     return(
-       <div key={index}>
+       <div key={index} className="main33">
          <div className="m1">
            <img src={item.posterURL} />
          </div>
          <div className="m2">
-           <h2 className="m21">qweqqweqwewe</h2>
-           <p className="m22">qweqqwee</p>
-           <p className="m23">qweqqwe</p>
+           <h2 className="m21">{item.showName}</h2>
+           <p className="m22">{item.latestShowTime}</p>
+           <p className="m23">{item.venueName}</p>
            <div className="m24">
-             <p className="mp1">qwe</p>
-             <p className="mp2">qweqwe</p>
+             <p className="mp1"><span>{item.showStatus.displayName}</span></p>
+             <p className="mp2"><span>{item.minPrice}</span>元起</p>
            </div>
          </div>
        </div>
