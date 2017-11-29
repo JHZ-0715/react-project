@@ -24,8 +24,16 @@
       "pathRewrite": {
         "^/prodapi": "/prodapi"
       },
-      "ws": true
+      "ws": true 
     },
+    "/showapi": {
+      "target": "https://m.tking.cn",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/showapi": "/showapi"
+      },
+      "ws": true
+  },
     "/users": {
       "target": "http://localhost:8000",
       "changeOrigin": true,
@@ -34,4 +42,5 @@
       },
       "ws": true
   }
+}
 }
