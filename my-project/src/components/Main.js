@@ -26,19 +26,19 @@ class Main extends Component {
 
     return(
        
-      // <div key={index} className="main2">
             <dl key={index}>
+
                 <dt>
                   <img src={item.posterURL} />
                 </dt>
                 <dd className="dd1">
-                  {item.showName}
+                  <p style={{ overflow: "hidden",textOverflow: "ellipsis",display: "-webkit-box",WebkitBoxOrient: "vertical",WebkitLineClamp: "2"}}>
+                  {item.showName}</p>
                 </dd>
                 <dd className="dd2">
                   {item.latestShowTime}
                 </dd>
             </dl>
-      // </div>
      
       );
     })
@@ -47,7 +47,9 @@ class Main extends Component {
     return(
             
           <div className="main2">
-            {list}
+            
+              {list}
+            
           </div>
       )
 
