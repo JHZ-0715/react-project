@@ -46,12 +46,17 @@
 	font-weight: bold;
 	color: #000;
 }
+.main222{
+	width: 100%;
+	overflow-x: scroll;
+}
 .main2{
 	width: 1200px;
 	height: 200px;
 	display: flex;
-	/*overflow: auto;*/
+	overflow: auto;
 	margin-top: 10px;
+	/**/
 }
 .main2 dl{
 	flex: 1;
@@ -136,6 +141,141 @@
 	font-size: 18px;
 	color: #f00;
 }
+
+
+.show1{
+	height: 50px;
+	width: 100%;
+
+}
+.show1 .p1{
+	float: left;
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+}
+.show1 .p2{
+	width: 70%;
+	float: right;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	background: #f5f5f5;
+	color: #aaa;
+	border-radius: 15px;
+	margin-right: 5%;
+	text-align: center;
+	position: relative;
+	font-size: 14px;
+}
+.show1 .p2 img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 20px;
+	top: 5px;
+
+}
+.show2 {
+	width: 100%;
+	overflow-x: scroll;
+}
+.show2 ul{
+	width: 600px;
+	display: flex;
+}
+.show2 li{
+	flex: 1;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 14px;
+	color: #aaa;
+	font-weight: bold;
+}
+.show3{
+	width: 100%;
+	display: flex;
+	height: 50px;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+}
+.show3 p{
+	flex: 1;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+.show4{
+	width: 100%;
+	height: 180px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+}
+.show4 .m1{
+	flex: 1;
+}
+.show4 .m1 img{
+	margin-left: 20%;
+	width: 60%;
+	height: 160px;
+}
+.show4 .m2{
+	flex: 1;
+	margin-right: 10px;
+}
+.show4 .m2 .m21{
+	text-align: left;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.show4 .m2 .m22,.show4 .m2 .m23{
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.show4 .m2 .m24{
+	margin-top: 20px;
+}
+.show4 .m2 .m24 .mp1{
+	width: 50%;
+	float: left;
+	/*background: #f00;*/
+
+}
+.show4 .m2 .m24 .mp1 span{
+	display: inline-block;
+	color: #f00;
+	border: 2px solid #f00;
+	border-radius: 20%;
+	width: 55px;
+	height: 24px;
+	line-height: 20px;
+	text-align: center;
+
+}
+.show4 .m2 .m24 .mp2{
+	width: 50%;
+	float: right;
+	color: #000;
+}
+.show4 .m2 .m24 .mp2 span{
+	font-size: 18px;
+	color: #f00;
+}
+
+
+
+
 
 
 
