@@ -53,7 +53,7 @@ class Login extends Component {
     	</div>
         <span><NavLink activeClassName="active" className="zc" to="/regist">快速注册</NavLink></span>
     	<button onClick={() => this.login()}>登录</button>
-    	<div className="txt">* 未注册过的帐号将自动创建摩天轮账号</div>
+    	<div className="txt"><NavLink activeClassName="active" to="/Order">* 未注册过的帐号将自动创建摩天轮账号</NavLink></div>
     </div>
     )
   }

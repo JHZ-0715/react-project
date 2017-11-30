@@ -1,0 +1,185 @@
+.bigbox{
+	background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.header{
+	width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #f5f5f5;
+}
+.header h2{
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ret{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(../images/mtl_sprites_615.fw.20c480bb.png) -170px -470px no-repeat;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.time{
+	width: 100%;
+	border-bottom: 1px solid #f5f5f5;
+}
+.time ul{
+	width: 100%;
+}
+.time ul li{
+	width: 33.3%;
+	height: 70px;
+	border-bottom: 3px solid #FD6857;
+}
+.time ul li a{
+	color: #FD6857;
+	font-size: 14px;
+	margin-left: 40px;
+	line-height: 30px;
+}
+.pm{
+	position: relative;
+    padding-left: 42px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+.small{
+    width: 10px;
+    height: 10px;
+    background: #FD6857;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translateY(-50%) rotateZ(45deg);
+    transform: translateY(-50%) rotateZ(45deg);
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+.big{
+	height: 320px;
+}
+.big ul{
+	width: 100%;
+}
+.big ul li{
+	width: 40%;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 5%;
+	margin-top: 10px;
+	border: 1px solid #D8D8D8;
+	border-radius: 4px;
+	color: #494949;
+}
+.number{
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #CCC;
+}
+.number p{
+	width: 50%;
+	font-size: 14px;
+	line-height: 50px;
+	margin-left: 20px;
+	float: left;
+}
+.reduce{
+	width: 36px;
+	height: 36px;
+	margin-top: 7px;
+	border: 1px dashed #ccc;
+	float: left;
+}
+.reduce p{
+	font-size: 60px;
+	margin: -15px auto;
+	margin-left: 3px;
+	color: #ccc
+}
+.add{
+	width: 36px;
+	height: 36px;
+	margin-top: 7px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 20px;
+}
+.add p{
+	font-size: 40px;
+	margin: -15px auto;
+	margin-left: 3px;
+	color: #ccc;
+}
+.num{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+.foot{
+	width: 100%;
+    height: 50px;
+    min-height: 50px; 
+    border-top: 1px solid #CCC;   
+}
+.total{
+	width: 70%;
+	float: left;
+}
+.total .p1{
+	color: #494949;
+	font-size: 14px;
+	line-height: 60px;
+	margin-left: 50px;
+	float: left;
+}
+.moneyNow{
+	float: left;
+	font-size: 30px;
+	line-height: 50px;
+	color: #FD6857;
+	margin-left: 5px;
+}
+.moneyAll{
+	float: left;
+	font-size: 12px;
+	line-height: 60px;
+	margin-left: 10px;
+	color: #aaa;
+}
+.p2{
+	float: left;
+	font-size: 12px;
+	line-height: 60px;
+	color: #aaa;
+}
+.total span{
+	display: inline-block;;
+	float: left;
+	font-size: 12px;
+	color: #FD6857;
+	line-height: 60px;
+}
+.foot button{
+	width: 30%;
+	height: 50px;
+	outline: none;
+	border:none;
+	background-color: #FD6857;
+	font-size: 16px;
+	color: #fff;
+}
