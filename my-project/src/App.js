@@ -5,8 +5,12 @@ import Main from './components/Main';
 import Home from './components/Home';
 import Show from './components/Show';
 import Regist from './components/regist';
+<<<<<<< HEAD
 import Order from './components/Order';
 import Price from './components/Price';
+=======
+import Detail from './components/Detail';
+>>>>>>> d3112a43354bf0e3e43596d8396096dc74c2f4e1
 import './App.css';
 import './css/antd.css';
 import './css/app.css';
@@ -59,8 +63,12 @@ class App extends Component {
                 <Route path="/Login" component={Login}/>
                 <Route path="/Show" component={Show}/>
                 <Route path="/Regist" component={Regist}/>
+<<<<<<< HEAD
                 <Route path="/Order" component={Order}/>
                 <Route path="/Price" component={Price}/>
+=======
+                <Route path="/Detail/:sid" component={Detail}/>
+>>>>>>> d3112a43354bf0e3e43596d8396096dc74c2f4e1
               </Switch>
             </div>
           </Router>

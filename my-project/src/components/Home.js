@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/antd.css';
-import Main from '../components/Main';
-import Mainlist from '../components/Mainlist';
+import Main from './Main';
+import Mainlist from './Mainlist';
 import axios from 'axios'
 import { Carousel } from 'antd';
 import {
