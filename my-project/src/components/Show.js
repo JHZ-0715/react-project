@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    NavLink,
+    Switch,
+    Redirect
+} from 'react-router-dom'
+
 class Show extends Component {
+
   constructor(){
     super();
     this.state = {
@@ -27,18 +37,20 @@ class Show extends Component {
 
     return(
        <div key={index} className="show4">
+       <NavLink activeClassName="active" to={"/Detail/" + item.showOID}>
          <div className="m1">
-           <img src={item.posterURL} />
+            <img src={item.posterURL} />
          </div>
          <div className="m2">
-           <h2 className="m21">{item.showName}</h2>
-           <p className="m22">{item.latestShowTime}</p>
-           <p className="m23">{item.venueName}</p>
-           <div className="m24">
-             <p className="mp1"><span>{item.showStatus.displayName}</span></p>
-             <p className="mp2"><span>{item.minPrice}</span>元起</p>
-           </div>
+             <h2 className="m21" style={{ overflow: "hidden",textOverflow: "ellipsis",display: "-webkit-box",WebkitBoxOrient: "vertical",WebkitLineClamp: "2"}}>{item.showName}</h2>
+             <p className="m22">{item.latestShowTime}</p>
+             <p className="m23">{item.venueName}</p>
+             <div className="m24">
+                 <p className="mp1"><span>{item.showStatus.displayName}</span></p>
+                 <p className="mp2"><span>{item.minPrice}</span>元起</p>
+             </div>
          </div>
+         </NavLink>
        </div>
      
       );
@@ -47,6 +59,7 @@ class Show extends Component {
 
     return(
       <div>
+
           <div className="show1">
               <p className="p1">北京&nbsp;&nbsp;∨</p>
               <div className="p2"><img src={require("../images/fdj.png")} />搜索明星、演出、场馆</div>
