@@ -20,8 +20,9 @@ class OrderUI extends Component {
     }
 	}
 	componentDidMount(){
+	console.log(this.props.match.params.ssid)
     var that = this;
-    axios.get("/showapi/pub/show/59f9c37a6204e62c7ed9255f?client=piaodashi_weixin&src=m_web&time=1512002600298")
+    axios.get(`/showapi/pub/show/${this.props.match.params.ssid}?client=piaodashi_weixin&src=m_web&time=1512002600298`)
     .then(function(res){
       console.log(res);
       that.setState({
@@ -46,7 +47,7 @@ class OrderUI extends Component {
 				<div className="small"></div>
 				票面
 			</div>
-			<Price></Price>
+			<Price {...this.props}></Price>
 		</div>
 		)
 	}

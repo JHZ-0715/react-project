@@ -38,8 +38,9 @@ class PriceUI extends Component {
 		document.querySelector('.moneyNow').innerHTML = price * number;
 	}
 	componentDidMount(){
+	console.log(this.props.match.params.ssid)
     var that = this;
-    axios.get("/showapi/pub/show/59f9c37a6204e62c7ed9255f/sessionone?src=m_web&time=1512025164992")
+    axios.get(`/showapi/pub/show/${this.props.match.params.ssid}/sessionone?src=m_web&time=1512025164992`)
     .then(function(res){
       console.log(res);
       that.setState({

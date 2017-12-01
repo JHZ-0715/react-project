@@ -60,7 +60,7 @@ class App extends Component {
                 <Route path="/Login" component={Login}/>
                 <Route path="/Show" component={Show}/>
                 <Route path="/Regist" component={Regist}/>
-                <Route path="/Order" component={Order}/>
+                <Route path="/Order/:ssid" component={Order}/>
                 <Route path="/Price" component={Price}/>
                 <Route path="/Detail/:sid" component={Detail}/>
               </Switch>

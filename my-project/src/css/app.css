@@ -307,6 +307,7 @@
 .detail1 .m2{
 	flex: 1;
 	margin-right: 10px;
+	position: relative;
 }
 .detail1 .m2 .m21{
 	text-align: left;
@@ -350,6 +351,23 @@
 	font-weight: bold;
 
 }
+.detail1 .m2 h1{
+	color: #f00;
+	width: 80px;
+	font-size: 16px;
+	height: 30px;
+	border-radius: 20px;
+	font-weight: bold;
+	border: 2px solid #f00;
+	position: absolute;
+	right: 0;
+	bottom: 35px;
+}
+.detail1 .m2 h1 a{
+	margin-left: 4px;
+	margin-top: 1px;
+
+}	
 .detail1 .img1{
 	width: 100%;
 	height: 10px;

@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import Detaillist from './Detaillist';
 import axios from 'axios'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    NavLink,
+    Switch,
+    Redirect
+} from 'react-router-dom'
 
 class Detail extends Component {
   constructor(){
@@ -24,13 +32,17 @@ class Detail extends Component {
         detail:res.data.result.data
       })
     })
+
   }
 
  render(){
+
       var list = null
       if(this.state.detail.showStatus){
         list = this.state.detail.showStatus.displayName
       }
+          console.log(this.state.detail.showOID)
+          console.log(this.state.detail.minPrice)
     return(
       <div> 
         <div className="detail1">
@@ -41,6 +53,8 @@ class Detail extends Component {
                 <h2 className="m21" style={{ overflow: "hidden",textOverflow: "ellipsis",display: "-webkit-box",WebkitBoxOrient: "vertical",WebkitLineClamp: "2"}}>{this.state.detail.showName}</h2>
                 <p className="mp1"><span>{list}</span></p>
                 <p className="mp2"><span>{this.state.detail.minPrice}</span>&nbsp;&nbsp;&nbsp;&nbsp;元起</p>
+                <h1><NavLink activeClassName="active" to={"/Order/" + this.state.detail.showOID}>点击购买</NavLink></h1>
+
             </div>
             <img src={require("../images/tiaotiao.png")} className="img1"/>
         </div>
